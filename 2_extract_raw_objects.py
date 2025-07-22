@@ -10,6 +10,9 @@ import numpy as np
 import config
 import utils
 
+import warnings
+warnings.filterwarnings("ignore")
+
 # --- Worker Initialization ---
 # This ensures each parallel worker has its own model instance
 def init_worker():
@@ -41,12 +44,12 @@ def process_image(img_path):
         return img_path, []
 
 if __name__ == '__main__':
-    # This example uses the MIT-67 dataset
-    # You would create similar logic for Scene15 and NYU-V1
+    
     image_paths = glob(os.path.join(config.MIT67_PATH, '*/*.jpg'))
     print(f"Found {len(image_paths)} images to process.")
 
     start_time = time.time()
+    init_worker() 
 
     # Use joblib for parallel processing
     results = Parallel(n_jobs=config.NUM_JOBS, verbose=10)(
