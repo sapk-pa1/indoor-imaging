@@ -1,0 +1,11 @@
+# Ignore Debian package files
+*.deb
+
+# Ignore compressed archive files
+*.zip
+
+# Ignore test scripts
+test*.py
+
+# Ignore Python bytecode cache directories
+__pycache__/
