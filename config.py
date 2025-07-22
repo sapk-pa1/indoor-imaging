@@ -5,7 +5,7 @@ import os
 DATASET_BASE_PATH = 'datasets'
 
 
-MIT67_PATH = os.path.join(DATASET_BASE_PATH, 'MIT-67', 'Images')
+MIT67_PATH = os.path.join(DATASET_BASE_PATH, 'MIT-67_s', 'images')
 SCENE15_PATH = os.path.join(DATASET_BASE_PATH, '15-Scene')
 NYUV1_PATH = os.path.join(DATASET_BASE_PATH, 'NYU-V1')
 
@@ -29,7 +29,7 @@ TOP_N_OBJECTS = 10
 
 # Number of CPU cores for parallel processing. -1 uses all available cores.
 # Set to 1 if you encounter memory issues.
-NUM_JOBS = -1
+NUM_JOBS = 1
 
 
 # --- MODEL PARAMETERS ---

@@ -1,3 +1,5 @@
 pillow==11.3.0 
 tensorflow==2.19.0
-scikit-learn==1.7.2
+# For GPU 
+#tensorflow[-and-cuda]
+scikit-learn
