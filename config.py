@@ -3,9 +3,9 @@ import os
 
 # Base directory for all datasets
 DATASET_BASE_PATH = 'datasets'
+DELTA_TYPE = "normal"
 
-
-MIT67_PATH = os.path.join(DATASET_BASE_PATH, 'MIT-67_s', 'images')
+MIT67_PATH = os.path.join(DATASET_BASE_PATH, 'MIT-67', 'images')
 SCENE15_PATH = os.path.join(DATASET_BASE_PATH, '15-Scene')
 NYUV1_PATH = os.path.join(DATASET_BASE_PATH, 'NYU-V1')
 

@@ -24,7 +24,8 @@ def build_all_dictionaries(raw_objects_data):
         
         # Pattern dictionary counts co-occurring pairs
         object_pairs = [
-            tuple(sorted((objects[i], objects[i+1])))
+            tuple((objects[i], objects[i+1])) # Preserving the discovery stage 
+            # Proposition rely on the directed adjacency 
             for i in range(len(objects) - 1)
         ]
         pattern_dictionaries[category] = Counter(object_pairs)
